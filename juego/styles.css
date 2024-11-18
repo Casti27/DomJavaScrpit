@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.winner {
+    background-color: yellow;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid green;
+}
+
+.loser {
+    background-color: red;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid black;
+}

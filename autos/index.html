@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cba562f72e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/assets/Icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <title>Autos</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/DomJavaScrpit/assets/coche.png" alt="" width="38" height="35" class="d-inline-block align-text-top">
+                Autos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Vehiculos">Industria Automotriz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#grafico">Gráfico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contáctanos</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">Cotiza-alquiler</button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 carousel__item-img" src="/DomJavaScrpit/assets/carruselUno.jpg" alt="BMW">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>BMW</h5>
+                    <p>BMW es una marca automotriz alemana conocida por sus vehículos de lujo y alto rendimiento, ofreciendo una combinación perfecta de tecnología avanzada y diseño elegante.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carousel__item-img" src="/DomJavaScrpit/assets/carruselDos.jpg" alt="Mercedes-Benz G-Wagon">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mercedes-Benz G-Wagon</h5>
+                    <p>El Mercedes-Benz G-Wagon es un icónico SUV de lujo, conocido por su resistencia, diseño robusto y alto rendimiento, ideal tanto para la ciudad como para terrenos difíciles.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carousel__item-img" src="/DomJavaScrpit/assets/carruselTres.jpg" alt="Chevrolet Camaro">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chevrolet Camaro</h5>
+                    <p>El Chevrolet Camaro es un coche deportivo de alto rendimiento con un diseño audaz y potente, ofreciendo una experiencia de conducción única para los entusiastas de los autos deportivos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+
+    
+    <div class="divider-content d-flex justify-content-between w-100 py-3" id="Vehiculos">
+        <div class="divider-item text-center">
+            <i class="fa-solid fa-car-side divider-icon mb-2"></i> 
+            <p>Vehiculos <br> Modelo 2024</p>
+        </div>
+        <div class="divider-item text-center">
+            <i class="fa-solid fa-gas-pump divider-icon mb-2"></i> 
+            <p>Combustible: <br> Gasolina/Hibridos</p>
+        </div>
+        <div class="divider-item text-center">
+            <i class="fa-solid fa-users divider-icon mb-2"></i> 
+            <p>Capacidad: <br> 5 Pasajeros</p>
+        </div>
+        <div class="divider-item text-center">
+            <i class="fa-solid fa-horse divider-icon mb-2"></i> 
+            <p>Potencia: <br> 300 HP</p>
+        </div>
+        <div class="divider-item text-center">
+            <i class="fa-solid fa-money-bill-wave divider-icon mb-2"></i> 
+            <p>Precio <br> €100/día</p>
+        </div>
+    </div>
+    
+
+    <div class="container content-section" id="Home">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <img src="/DomJavaScrpit/assets/homeInfo.jpg" class="img-fluid" alt="Parque eólico" id="homeImg">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="content-title">La Evolución de la Industria Automotriz en Colombia</h2>
+                <p class="content-text">
+                    <span class="highlight-text">La industria automotriz en Colombia</span> ha experimentado un crecimiento sostenido 
+                    en los últimos años, destacándose especialmente la venta de vehículos nuevos. Marcas como 
+                    <span class="highlight-text">Chevrolet</span>, <span class="highlight-text">Renault</span>, <span class="highlight-text">Mazda</span> y 
+                    <span class="highlight-text">BMW</span> lideran las ventas, adaptándose a las necesidades del mercado y 
+                    respondiendo a la creciente demanda de vehículos más sostenibles y eficientes. La electrificación de los 
+                    modelos es una tendencia clave que está transformando la industria, con un enfoque en reducir las emisiones 
+                    de carbono y promover alternativas más ecológicas. Esto no solo está cambiando la oferta de vehículos, 
+                    sino también impulsando nuevas inversiones en tecnologías automotrices más limpias y eficientes.
+                </p>
+                <small>Fuentes: Estudio sobre el Mercado Automotriz en Colombia, Análisis de Ventas de Vehículos en 2023</small>
+                <div>
+                    <a href="#cards" class="btn btn-primary content-button">Conoce más</a>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="container__service container__card-primary div__offset" id="cards">
+        <div class="service card__primary">
+            <div class="text__service text__card-primary">
+                <h1>Principales Marcas Populares</h1>
+            </div>
+            <div class="container__card-service container__box-cardPrimary">    
+                
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/chevrolet.png" alt="Chevrolet">
+                    <h2>Chevrolet</h2>
+                    <p>Chevrolet sigue siendo una de las marcas más populares en Colombia, destacando modelos como el Spark y el Tracker, conocidos por su confiabilidad y eficiencia de combustible.</p>
+                </div>
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/renault.png" alt="Renault">
+                    <h2>Renault</h2>
+                    <p>Renault es famosa en Colombia por sus vehículos accesibles y económicos como el Kwid y Duster, que ofrecen una excelente relación calidad-precio y tecnología avanzada.</p>
+                </div>
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/audi.png" alt="Nissan">
+                    <h2>Audi</h2>
+                    <p>Audi es una marca de automóviles de lujo y alto rendimiento conocida por su sofisticación y tecnología avanzada. Modelos como el Audi A4 y el Audi Q7 </p>
+                </div>
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/mazda.png" alt="Mazda">
+                    <h2>Mazda</h2>
+                    <p>Los autos de Mazda, como el Mazda3 y el CX-5, son conocidos por su diseño elegante, tecnología avanzada y rendimiento excepcional.</p>
+                </div>
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/Bmw.png" alt="Kia">
+                    <h2>BMW</h2>
+                    <p>BMW es sinónimo de lujo y rendimiento, destacándose por modelos como el BMW X5 y el Serie 3, que ofrecen una combinación perfecta de tecnología avanzada.</p>
+                </div>
+                <div class="card__service box__card-primary">
+                    <img src="/DomJavaScrpit/assets/mercedez.png" alt="Ford">
+                    <h2>mercedez-Benz</h2>
+                    <p>Mercedes-Benz es conocida por sus autos de lujo, con modelos como el Clase C y el GLC, que ofrecen una tecnología de vanguardia.</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+<div class="grafico" id="grafico">
+    <div class="container">
+        <section id="data-upload">
+            <div id="file-input" accept=".csv"></div>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard - automoviles más vendidos</h2>
+            <canvas id="consumptionChart"></canvas>
+            
+            
+            <div class="chart-summary">
+                <h3>Resumen de Ventas de Vehículos en Colombia</h3>
+                <p>
+                    Este gráfico muestra la distribución de las ventas de los vehículos más populares en Colombia, 
+                    destacando las 6 marcas más vendidas en los últimos años. Se observa que marcas como 
+                    <span class="highlight-text">Chevrolet</span>, <span class="highlight-text">Renault</span>, 
+                    <span class="highlight-text">Audi</span>, <span class="highlight-text">Mazda</span>, 
+                    <span class="highlight-text">BMW</span> y <span class="highlight-text">Mercedes-Benz</span> 
+                    dominan el mercado automotriz. A lo largo de los últimos años, estas marcas han mantenido un 
+                    crecimiento constante, reflejando una creciente demanda de vehículos nuevos en Colombia. Este aumento 
+                    en las ventas es testigo de una transición hacia opciones más sostenibles y eficientes, con un enfoque 
+                    cada vez mayor en la electrificación de modelos, lo que prepara a la industria para un futuro más verde y 
+                    tecnológicamente avanzado en la automoción.
+                </p>
+            </div>
+            
+        </section>
+    </div>
+</div>
+
+
+    <div class="container-fluid" id="contact">
+        <div class="row text-start">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h4 class="footer__title">Movement</h4>
+                <ul>
+                    <li><a href="#hero">Movement</a></li>
+                    <li><a href="#hero">Suppor Us</a></li>
+                    <li><a href="#hero">Pricing</a></li>
+                    <li><a href="#hero">Renting</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3  ">
+                <h4 class="footer__title">Movement</h4>
+                <ul>
+                    <li><a href="#hero">Movement</a></li>
+                    <li><a href="#hero">Suppor Us</a></li>
+                    <li><a href="#hero">Pricing</a></li>
+                    <li><a href="#hero">Renting</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3  ">
+                <h4 class="footer__title">Movement</h4>
+                <ul>
+                    <li><a href="#hero">Movement</a></li>
+                    <li><a href="#hero">Suppor Us</a></li>
+                    <li><a href="#hero">Pricing</a></li>
+                    <li><a href="#hero">Renting</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3  ">
+                <h4 class="footer__title">Movement</h4>
+                <div class="social-icons-footer">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://wa.me/3193865914" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copi">
+        <p>&copy; 2024 Derechos reservados a Felipe Garcia</p>
+    </footer>
+    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">Cotiza-alquiler</button>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Alquiler de Carros</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-4">
+                        <h1 class="text-center mb-4">Alquiler de Carros</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Seleccione un carro</h3>
+                                <form id="rental-form">
+                                    <div class="mb-3">
+                                        <label for="car-select" class="form-label">Carro:</label>
+                                        <select class="form-select" id="car-select" required>
+                                            <option value="bmw-azul">BMW Azul</option>
+                                            <option value="mercedes-negro">Mercedes Negro</option>
+                                            <option value="twingo-verde">Twingo Verde</option>
+                                            <option value="megane-rojo">Megane Rojo</option>
+                                            <option value="chevrolet-gris">Chevrolet Gris</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rental-days" class="form-label">Días de alquiler:</label>
+                                        <input type="number" class="form-control" id="rental-days" min="1" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Calcular Precio</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Resumen del Alquiler</h3>
+                                <div id="rental-summary" class="p-3 border rounded">
+                                    <h4 id="car-name">Carro seleccionado</h4>
+                                    <img id="car-image" src="" alt="Imagen del carro" style="max-width: 100%; height: auto;">
+                                    <p id="rental-info">Días de alquiler: </p>
+                                    <p id="price-info">Precio total: </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/DomJavaScrpit/autos/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

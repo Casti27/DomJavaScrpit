@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sour Gummy", serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.container-center {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none; 
+    color: white;
+    cursor: pointer; 
+    outline: none; 
+}
+
+.buttonOne {
+    background-color: blue;
+}
+
+.buttonTwo {
+    background-color: orange;
+}
+
+.buttonThree {
+    background-color: green;
+}
+
+.buttonFour {
+    background-color: red;
+}
+
+.buttonFive{
+    background-color: rgb(255, 0, 200);
+}
+button:hover {
+    opacity: 0.8; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}
+
+

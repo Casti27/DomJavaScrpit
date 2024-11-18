@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencia de Perros</title>
+    <link rel="stylesheet" href="/DomJavaScrpit/perros/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Competencia de Perros</h1>
+        
+        <form id="dog-competition-form">
+            <div class="dog-position">
+                <label for="dog1">Puesto 1:</label>
+                <input type="text" id="dog1" placeholder="Ingrese la raza del perro puesto 1">
+            </div>
+            <div class="dog-position">
+                <label for="dog2">Puesto 2:</label>
+                <input type="text" id="dog2" placeholder="Ingrese la raza del perro puesto 2">
+            </div>
+            <div class="dog-position">
+                <label for="dog3">Puesto 3:</label>
+                <input type="text" id="dog3" placeholder="Ingrese la raza del perro puesto 3">
+            </div>
+            <button type="submit">Ver Resultados</button>
+        </form>
+
+        <div id="result">
+            <div id="first-place" class="result-box">
+                <h2>Puesto 1: </h2>
+                <p id="first-dog">Raza: </p>
+                <p id="first-price">Precio: </p>
+            </div>
+            <div id="second-place" class="result-box">
+                <h2>Puesto 2: </h2>
+                <p id="second-dog">Raza: </p>
+                <p id="second-price">Precio: </p>
+            </div>
+            <div id="third-place" class="result-box">
+                <h2>Puesto 3: </h2>
+                <p id="third-dog">Raza: </p>
+                <p id="third-price">Precio: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/DomJavaScrpit/perros/script.js"></script>
+</body>
+</html>
